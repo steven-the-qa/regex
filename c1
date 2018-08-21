@@ -1,0 +1,7 @@
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString); // Change this line
+
+//This is an example of using the '.test()' method
+//The test method checks a string (myString) for a given search pattern (myRegex)
+//If it finds what you're looking for, it returns true, and false if not
