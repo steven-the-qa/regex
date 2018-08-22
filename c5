@@ -1,0 +1,7 @@
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(codingRegex); // Change this line
+
+//The '.match()' method extracts any found instances of the pattern from the string INSTEAD OF just CHECKING FOR them
+//You can use this method to store pattern matches in variables
+//The match method returns an array of matches
