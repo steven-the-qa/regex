@@ -1,0 +1,6 @@
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);
+
+//The '.' wildcard character, also called 'period' or 'dot', like in grammar or object notation, matches every character
+//It's useful if you're writing a regex that tolerates a variable in the pattern
