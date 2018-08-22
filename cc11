@@ -1,0 +1,7 @@
+let quoteSample = "3 blind mice.";
+let myRegex = /[^0-9aeiou]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+
+//This regex includes a 'negated character set' or 'negated character class'
+//A character set can be negated by preceding the regex inside the forward slashes '/' with the 'caret' symbol
+//This regex searches for ALL instances of the pattern REGARDLESS of case EXCEPT numbers 0 through 9 and 'a', 'e', 'i', 'o', and 'u'
