@@ -1,0 +1,6 @@
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line
+
+//Using the built-in 'a-z' all-alphabetical-character-matching tool, you can test for ALL letters present in a string
+//Used together with the character class tool, and the global and ignore case flags, this regex searches for all letters present regardless of case
