@@ -1,0 +1,10 @@
+// example crowd gathering
+let crowd = 'P1P2P3P4P5P6CCCP7P8P9';
+
+let reCriminals = /C+/; // Change this line
+
+let matchedCriminals = crowd.match(reCriminals);
+console.log(matchedCriminals);
+
+//The solution to this problem needed to be a greedy regex (returns the longest match possible)
+//It needed to find instances of the capital letter 'C' that occured one or more times in a 'crowd' (string of P1P2, etc.)
