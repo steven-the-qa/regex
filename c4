@@ -1,0 +1,6 @@
+let myString = "freeCodeCamp";
+let fccRegex = /freecodecamp/i; // Change this line
+let result = fccRegex.test(myString);
+
+//The 'i' flag goes at the end of the regex and means 'ignore case'
+//It lets you match strings that have the search pattern no matter if they are uppercase or lowercase
