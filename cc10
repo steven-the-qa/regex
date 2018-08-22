@@ -1,0 +1,6 @@
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/gi; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+
+//You can include a range of letters OR numbers using a hyphen
+//They can even be put together inside the same bracketed [] character set
