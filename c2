@@ -1,0 +1,6 @@
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);
+
+//Regexes match EXACTLY the search pattern you put in them, including case-sensitivity
+//That regex /Waldo/ will NOT match 'WALDO', 'waldo', or any other example of altered case
