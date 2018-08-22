@@ -1,0 +1,7 @@
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/; // Change this line
+let result = text.match(myRegex);
+
+//The question mark '?' can be added to an expression to do 'lazy matching'
+//Lazy matching finds the shortest possible substring that matches the search pattern
+//Regexes are by default 'greedy,' which means unless you add the '?,' it will search for the longest possible match to the regex pattern
