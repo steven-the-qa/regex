@@ -1,0 +1,7 @@
+let hello = "   Hello, World!  ";
+let wsRegex = /Hello, World!/; // Change this line
+let result = hello.match(wsRegex);// Change this line
+
+//When you have a string you want to remove whitespace from, the '.trim()' method works just fine
+//If you want to use regular expressions to do the same thing, you can use the '.match()' method
+//This lets you grab what you want from the string as determined by the regex, and save it to a variable as the new string
