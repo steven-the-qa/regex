@@ -1,0 +1,5 @@
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/; // Change this line
+let result = haRegex.test(haStr);
+
+//Specifying a lower limit is just a matter of using only 1 number and following it with a comma ',' to indicate no upper limit is specified
