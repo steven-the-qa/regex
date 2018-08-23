@@ -1,0 +1,11 @@
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{5,})(?=\D*\d\d\d*)/; // Change this line
+let result = pwRegex.test(sampleWord);
+
+//This is an example of a 'positive lookahead'
+//A negative lookahead uses this syntax: '(?!...)'
+//This pattern checks for at least 5 letters and 2 consecutive numbers
+//Lookaheads don't match the patterns they look for
+//Think of it as a scout in the military. It will find and report back, but it won't interact with or otherwise engage what it reports on
+//Negative lookaheads look to make sure the pattern ISN'T there. It returns the rest of the string if the pattern is not found
+//Positive lookaheads return the rest of the string if the pattern IS found
