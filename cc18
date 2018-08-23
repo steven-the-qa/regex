@@ -1,0 +1,8 @@
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/g; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
+
+//The '\w' is a 'shorthand character class' in Javascript that is equivalent to [A-Za-Z0-9_]
+//It matches every upper- and lowercase character in the alphabet along with every number and the underscore '_' character
+//Using this shorthand class with the global 'g' flag lets you return an array from the '.match()' method
+//That array can be counted and that length will coincide with the length of the string as long as it didn't contain any extra symbols 
