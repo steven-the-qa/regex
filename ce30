@@ -1,0 +1,11 @@
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+)\s\1\s\1$/; // Change this line
+let result = reRegex.test(repeatNum);
+
+//This regex is supposed to match a pattern of 3 numbers separated by a space character like so: "24 24 24"
+//In order to make sure this pattern is the WHOLE string, and not just part of it, I have to add the caret '^' and anchor '$'
+//These make sure that the pattern is at the beginning AND end of the string, meaning it IS the string itself
+//The pattern is 1 digit, then 1 space, then repeating the digit capture group, 1 space, digit capture group
+//The order in which we declare capture groups in the regex determines the capture group's number '\1'
+//Since there is ONLY 1 capture group declared, that capture group's number is 1
+//In this way, these numbers are not only ordinal, they are also like variables that let you represent the capture group elsewhere
