@@ -1,0 +1,15 @@
+let huhText = "This sandwich is good.";
+let fixRegex = /good/; // Change this line
+let replaceText = "okey-dokey"; // Change this line
+let result = huhText.replace(fixRegex, replaceText);
+
+//This is an example of a 'search and replace' algorithm
+//It uses the regex to search for the word 'good' in the string, and if it finds it, it will replace it with 'okey-dokey' via the replace method
+//The replace method accepts 2 arguments: (regex to search with, text to replace found search pattern with)
+
+/*The 2nd argument can also use the capture groups to rearrange found search patterns in the string like in the freeCodeCamp's example:
+
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+// Returns "Camp Code"
+
+*/
