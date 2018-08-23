@@ -1,0 +1,6 @@
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g; // Change this line
+let result = sample.match(countNonWhiteSpace);
+
+//'\S' is the negated whitespace character class
+//It's the same as [^ \n\t\v\r\f]
