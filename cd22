@@ -1,0 +1,8 @@
+let username = "JackOfAllTrades";
+let userCheck = /[a-zA-z][a-zA-Z][\w*][\d$]*/; // Change this line
+let result = userCheck.test(username);
+
+//This regex I created checks usernames for certain restrictions
+//[a-zA-Z][a-zA-Z] checks that the username begins with 2 alphabet characters because 2-character usernames MUST BEGIN with 2 letters
+//[\w*] checks for zero or more alphabetical characters after the first 2 letters because usernames must ONLY BE 2+ characters
+//[\d$]* checks for zero more instances of digits at the end of the string because numbers are optional but MUST come at the end
