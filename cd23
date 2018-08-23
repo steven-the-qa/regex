@@ -1,0 +1,6 @@
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/g; // Change this line
+let result = sample.match(countWhiteSpace);
+
+//The shorthand character set '\s' searches for whitespace but also carriage return, form feed, new line, vertical tab, and tab characters.
+//It is equivalent to [ \n\f\t\r\v]
