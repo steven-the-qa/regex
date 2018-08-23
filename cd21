@@ -1,0 +1,5 @@
+let numString = "Your sandwich will be $5.00";
+let noNumRegex = /\D/g; // Change this line
+let result = numString.match(noNumRegex).length;
+
+//This is the negated version of the '\d' class, and it finds all NON-digits
