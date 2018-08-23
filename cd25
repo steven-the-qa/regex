@@ -1,0 +1,5 @@
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6} no/; // Change this line
+let result = ohRegex.test(ohStr);
+
+//The quantity specifier brackets {} specify how many times a character should appear in the string to return true
