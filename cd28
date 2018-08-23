@@ -1,0 +1,7 @@
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);
+
+//The '?' from lazy matching is used to say that the preceding character or set is 'optional'
+//Since the word 'favorite' can also be spelled 'favourite' using British spelling, we want to say the 'u' is optional
+//This catches the British spelling if the 'u' is present and ignores the absence of a 'u' in the American spelling
