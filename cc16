@@ -1,0 +1,8 @@
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
+
+//The caret '^' inside a character class [^abc] is used to make a negated character class
+//Outside a character class, it's used to find a pattern if it's at the BEGINNING of the string
+//So it'll find 'Cal' but only if it comes first in the string
+//It returns false if the string is, say, 'Ricky and Cal both like racing.'
