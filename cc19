@@ -1,0 +1,7 @@
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/g; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
+
+//The '\W' shorthand character set is the negated version of '\w'
+//This means it searches for all the NON-alphanumeric (and _) characters in a string
+//Using the global tag makes sure you can return more than one match
