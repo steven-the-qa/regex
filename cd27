@@ -1,0 +1,5 @@
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let result = timRegex.test(timStr);
+
+//Exact number specifiers are just a single number in brackets {} without a comma
